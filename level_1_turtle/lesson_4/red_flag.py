@@ -1,0 +1,16 @@
+from turtle import * # 导入Turtle库
+screensize(1000,1000) # 设置一个300*300的画布
+penup()
+goto(-250,-125)
+pendown()
+color("red", "red")
+begin_fill()
+forward(500)
+left(90)
+forward(250)
+left(90)
+forward(500)
+left(90)
+forward(250)
+left(90)
+end_fill()

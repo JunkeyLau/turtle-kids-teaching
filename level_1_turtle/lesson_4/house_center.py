@@ -1,0 +1,52 @@
+from turtle import * # 导入turtle模块
+screensize(300, 300)
+pensize(3)
+speed(1)
+penup() # 提起画笔
+goto(-100,6) # 将画笔往左移动100个单位，往上移动6个单位
+pendown() # 放下画笔
+fillcolor("red") # 绘制房顶
+begin_fill()
+forward(200)
+left(120)
+fd(200)
+left(120)
+fd(200)
+end_fill()
+fillcolor("grey") # 绘制房体
+begin_fill()
+penup()
+left(120)
+fd(20)
+right(90)
+pendown()
+fd(160)
+left(90)
+fd(160)
+left(90)
+fd(160)
+end_fill()
+backward(40) # 窗子
+penup()
+left(90)
+fd(40)
+pendown()
+fillcolor("white")
+begin_fill()
+fd(60)
+left(90)
+fd(60)
+left(90)
+fd(60)
+left(90)
+fd(60)
+end_fill()
+backward(30) # 窗户格子 
+left(90)
+forward(60)
+backward(30)
+right(90)
+backward(30)
+fd(60)
+hideturtle()
+done() # 完成作画
