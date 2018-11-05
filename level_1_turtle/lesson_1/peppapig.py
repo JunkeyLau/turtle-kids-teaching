@@ -2,11 +2,10 @@
 import turtle as t
 
 t.pensize(4)
-t.hideturtle()
 t.colormode(255)
 t.color((255,155,192),"pink")
 t.setup(840,500)
-t.speed(0)
+t.speed(1)
 
 #鼻子
 t.pu()
