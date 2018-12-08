@@ -1,7 +1,7 @@
 # 本节课教学如何绘制小猪佩奇的家(暂不画太阳和草地)
 from turtle import *
-screensize(600,600)
-speed(1) # 设置画笔速度
+screensize(1000,1000)
+speed(0) # 设置画笔速度
 goto(0,100)
 pensize(1)
 # 绘制左边的部分 

@@ -1,0 +1,21 @@
+from turtle import *
+colors = ["red", "orange", "yellow", "green", "blue", "indigo", "purple"]
+speed(0)
+left(90)
+for n in range(7):
+    color(colors[n], colors[n])
+    begin_fill()
+    circle((300-n*10), 180)
+    left(90)
+    forward(10)
+    left(90)
+    circle(-(300-(n+1)*10), 180)
+    left(90)
+    forward(10)
+    end_fill()
+    penup()
+    right(180)
+    forward(10)
+    right(90)
+    pendown()
+done()
