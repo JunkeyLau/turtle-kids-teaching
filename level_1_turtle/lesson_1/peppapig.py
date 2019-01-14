@@ -5,7 +5,7 @@ t.pensize(4)
 t.colormode(255)
 t.color((255,155,192),"pink")
 t.setup(840,500)
-t.speed(1)
+t.speed(0)
 
 #鼻子
 t.pu()

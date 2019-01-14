@@ -2,7 +2,7 @@
 # 第九节课内容：画草坪和蓝天 两朵白云 太阳
 from turtle import *
 screensize(1154, 824, "#8fc3ff")
-speed(5)
+speed(0)
 
 # 先定义一些基础函数
 
@@ -44,6 +44,7 @@ def window(a, b):
     pen_move(b/2)
     right(90)
     forward(a)
+    pensize(1)
 
 # 重设坐标原点为画布左上角
 x=-557
@@ -91,4 +92,95 @@ forward(530)
 circle(-254,90)
 end_fill()
 
+# 画房子
+# 先画屋顶
+go_to(502+x,-300+y)
+setheading(0)
+pensize(1)
+color("#dedc9f","#ff9b6d")
+begin_fill()
+forward(70)
+left(45)
+forward(215)
+setheading(180)
+forward(70)
+left(45)
+forward(215)
+end_fill()
+# 画屋顶上的天线
+go_to(680+x,-160+y)
+setheading(90)
+pencolor("black")
+pensize(3)
+forward(40)
+right(90)
+forward(10)
+backward(20)
+forward(10)
+left(90)
+for n in range(2):
+    forward(25)
+    right(90)
+    forward(20+2*n)
+    backward(40+5*n)
+    forward(20+3*n)
+    left(90)
+forward(30)
+pensize(1)
+
+# 继续画房子主体 左边长方形部分
+go_to(502+x,-300+y)
+color("#dedc9f","#f1f0ad")
+begin_fill()
+setheading(-90)
+forward(300)
+left(90)
+forward(70)
+left(90)
+forward(300)
+end_fill()
+# 画门
+go_to(525+x, -600+y)
+setheading(90)
+color("#a39f76", "#fbf466")
+begin_fill()
+forward(130)
+right(90)
+forward(25)
+right(90)
+forward(130)
+right(90)
+end_fill()
+# 画左边的窗户
+go_to(525+x, -320+y)
+setheading(0)
+window(25, 70)
+
+# 右边房子主体
+go_to(572+x, -300+y)
+setheading(45)
+color("#dedc9f","#f1f0ad")
+begin_fill()
+forward(215)
+right(90)
+forward(215)
+right(45)
+forward(300)
+right(90)
+forward(305)
+right(90)
+forward(300)
+end_fill()
+# 画右边的四个窗户
+go_to(620+x, -320+y)
+setheading(0)
+window(70,70)
+go_to(760+x, -320+y)
+window(70,70)
+go_to(620+x, -460+y)
+window(70,70)
+go_to(760+x, -460+y)
+window(70,70)
+
+hideturtle() # 隐藏turtle
 done() # 结束画图
