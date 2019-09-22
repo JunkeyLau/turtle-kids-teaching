@@ -2,7 +2,7 @@
 # 第九节课内容：画草坪和蓝天 两朵白云 太阳
 from turtle import *
 screensize(1154, 824, "#8fc3ff")
-speed(0)
+speed(5)
 
 # 先定义一些基础函数
 
